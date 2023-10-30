@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
-import './App.css';
-import Card from './components/Card';
+import './css/App.css';
 import Header from './components/Header';
 import Calculator from './components/Calculator' 
 
@@ -12,8 +10,6 @@ function App() {
         <Header/>
         <div>
           <Calculator></Calculator>
-        </div>
-        <div>
         </div>
       </div>
     </div>
