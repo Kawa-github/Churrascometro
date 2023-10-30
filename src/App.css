@@ -1,5 +1,13 @@
+
+body{
+  height: 100vh;
+  background-color: #69140e;
+  background-image: linear-gradient(315deg, #69140e 0%, #d58936 74%);
+
+}
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +43,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-participations{
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  width: 200px;
+  height: 150px;
+  background-color: burlywood;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+button{
+  margin: 4px;
+  padding: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.total{
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-top: 17px;
+  
 }
