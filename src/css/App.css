@@ -1,9 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body{
-  height: 100vh;
-  background-color: #69140e;
-  background-image: linear-gradient(315deg, #69140e 0%, #d58936 74%);
+:root {
+  --div-bg: #A0948B;
+  --div-border: #6b5e66;
+  --default-button: #e56132;
+  --title-page: #efa360;
+  --bg-page: #3F373C;
+  --text-color: white;
+  --text-color-black:black;
+}
 
+body {
+  font-family: "Fira Code", monospace;
+  background-color: var(--bg-page);
 }
 
 .container{
@@ -22,10 +34,28 @@ body{
 .card{
   width: 200px;
   height: 150px;
-  background-color: burlywood;
+  background-color: var(--div-bg);
   margin: 15px;
   border-radius: 15px;
 }
+
+.btnCalc{
+  background-color: var(--default-button);
+  color: var(--text-color-black);
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
+  width: 150px;
+}
+
+.btnCalc:hover{
+  background-color: var(--div-bg);
+  transition: 0.2s ease-in;
+}
+
 
 button{
   margin: 4px;
@@ -42,3 +72,4 @@ button{
   margin-top: 17px;
   
 }
+

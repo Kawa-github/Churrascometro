@@ -91,7 +91,7 @@ import Card from './Card';
                     <Card name="Crianças" count={this.state.criancas} increment={this.incrementCriancas} decrement={this.decrementCriancas} />
                 </div>
                 <div>
-                    <button onClick={this.getQuantity}>
+                    <button onClick={this.getQuantity} className='btnCalc'>
                         Calcular
                     </button>
                 </div>
