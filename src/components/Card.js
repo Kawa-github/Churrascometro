@@ -15,11 +15,13 @@ const Card = (props) =>{
 
     return (
         <div className="card">
-            <h3>{props.name}</h3>
+          <div className='itensCard'>
+            <h1>{props.name}</h1>
             <p>{props.count}</p>
-            <button onClick={props.decrement}>-</button>
-            <button onClick={props.increment}>+</button>
+            <button onClick={props.decrement} className='btnCount'>-</button>
+            <button onClick={props.increment} className='btnCount'>+</button>
           </div>
+        </div>
     )
 }
 

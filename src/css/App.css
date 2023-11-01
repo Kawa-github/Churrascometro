@@ -9,13 +9,30 @@
   --default-button: #e56132;
   --title-page: #efa360;
   --bg-page: #3F373C;
-  --text-color: white;
+  --text-color-white: white;
   --text-color-black:black;
 }
 
 body {
   font-family: "Fira Code", monospace;
   background-color: var(--bg-page);
+}
+
+.header{
+  margin: 50px;
+
+  > h1{
+    color: var(--title-page);
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  > h3{
+    font-size: 18px;
+    color: var(--text-color-white);
+    font-weight: lighter;
+  }
+  
 }
 
 .container{
@@ -37,6 +54,30 @@ body {
   background-color: var(--div-bg);
   margin: 15px;
   border-radius: 15px;
+
+  > .itensCard{
+    margin: 15px;
+  }
+
+  > .itensCard h1{
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  
+  > .itensCard p{
+    margin-bottom: 15px;
+    color: #8B6B52;
+    font-size: 30px;
+  }
+}
+
+.btnCount{
+  background-color: #8B6B52;
+  color: #DB9E69;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  width: 40px;
 }
 
 .btnCalc{
