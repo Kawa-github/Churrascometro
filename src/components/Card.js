@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 
 const Card = (props) =>{
     // const [counter, setCounter] = useState(0)
@@ -23,5 +22,13 @@ const Card = (props) =>{
           </div>
     )
 }
+
+
+Card.propTypes = {
+    name: PropTypes.string.isRequired,
+    count: PropTypes.number.isRequired,
+    increment: PropTypes.func.isRequired, 
+    decrement: PropTypes.func.isRequired, 
+  };
 
 export default Card
